@@ -1,53 +1,31 @@
-Pet Store Manager
-A Laravel application for managing pets through the Swagger Pet Store API.
+# Installation
 
-Requirements
-PHP 8.1 or higher
-Composer
-Laravel 10.x
-Installation
-Clone the repository:
-git clone https://github.com/yourusername/pet-store.git
+1. clone repository
+```
+git clone git@github.com:devluk2/esprzedaz.git
+cd esprzedaz
+```
 
-Copy
-
-Execute
-
-Navigate to project directory:
-cd pet-store
-
-Copy
-
-Execute
-
-Install dependencies:
+2. install dependencies, setup .env
+```
+npm install && npm run build
 composer install
-
-Copy
-
-Execute
-
-Create environment file:
 cp .env.example .env
-
-Copy
-
-Execute
-
-Generate application key:
 php artisan key:generate
+```
 
-Copy
+3. create database and run migrations
+```
+touch database/database.sqlite
+php artisan migrate
+```
 
-Execute
+4. run app
+```
+composer run dev
+```
 
-Running the Application
-Start the local development server:
-
-php artisan serve
-
-Copy
-
-Execute
-
-Visit http://localhost:8000 in your browser.
+5. open in browser
+```
+http://localhost:8000
+```
